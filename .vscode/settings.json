@@ -1,0 +1,8 @@
+{
+    "editor.stickyScroll.scrollWithEditor": true,
+    "workbench.tree.enableStickyScroll": true,
+    "workbench.tree.stickyScrollMaxItemCount": 7,
+    "terminal.integrated.stickyScroll.maxLineCount": 5,
+    "notebook.stickyScroll.enabled": false,
+    "editor.stickyScroll.enabled": false
+}
