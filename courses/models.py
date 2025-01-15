@@ -22,3 +22,20 @@ class Home(models.Model):
         verbose_name = "Página Inicial"
         verbose_name_plural = "Páginas Iniciais"
 
+class ContactMessage(models.Model):
+    """Modelo para armazenar mensagens de contato"""
+    name = models.CharField(max_length=255, verbose_name="Nome")
+    email = models.EmailField(verbose_name="E-mail")
+    subject = models.CharField(max_length=255, verbose_name="Assunto")
+    message = models.TextField(verbose_name="Mensagem")
+
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Data de Criação")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Data de Edição")
+
+    def __str__(self):
+        """Retorna: str: O assunto da mensagem."""
+        return self.subject
+    
+    class Meta:
+        verbose_name = "mensagem de contato"
+        verbose_name_plural = "mensagens de contato"
