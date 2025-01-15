@@ -1,4 +1,8 @@
 from django.shortcuts import render
 
+from .models import Home
+
 def home(request):
-    return render(request, 'courses/home.html')
+    # Recupera o conteúdo da página home
+    home = Home.objects.filter().first()
+    return render(request, 'courses/home.html', { 'home': home})

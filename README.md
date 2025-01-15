@@ -4,6 +4,9 @@
 * Django 5 ou superior - Conferir a versão: django-admin --version
 * GIT - Conferir a instalação: git -v
 
+## Como rodar o projeto baixado
+
+
 ## Sequencia para criar o projeto
 
 Criar o ambiente virtual.
@@ -69,6 +72,21 @@ python manage.py startapp nome-do-app
 ```
 ```
 python manage.py startapp courses
+```
+
+Criar a migration que será responsável em criar a tabela no banco de dados.
+```
+python manage.py makemigrations
+```
+
+Executar as migrations para criar as tabelas no banco de dados.
+```
+python manage.py migrate
+```
+
+Executar as seeds para cadastrar registro de teste.
+```
+python manage.py seed_home
 ```
 
 ## Como usar o GitHub.
