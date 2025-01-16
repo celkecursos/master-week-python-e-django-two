@@ -4,21 +4,7 @@
   <div class="container mt-4">
     <div class="row mb-5 pt-5 pb-5 p-2">
       <div class="col-md-5">
-        <h3 class="mb-3 title-list-courses">Nosso Endereço</h3>
-        <p>
-          <strong>Nome da Empresa</strong><br />
-          Rua Exemplo, 123<br />
-          Bairro, Cidade, Estado<br />
-          CEP: 12345-678<br />
-          Telefone: (00) 9 1234-5678<br />
-          E-mail: cesar@celke.com.br
-        </p>
-        <p>
-          <strong>Horário de Funcinamento:</strong><br />
-          Segunda a Sexta: 9h às 18h<br />
-          Sábado: 9h às 13h<br />
-          Domingo: Fechado
-        </p>
+        {{ contact.address|safe }}
       </div>
       <div class="col-md-7">
         <h3 class="mb-3 title-list-courses">Envie uma Mesagem</h3>

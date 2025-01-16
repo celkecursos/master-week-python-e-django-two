@@ -39,3 +39,39 @@ class ContactMessage(models.Model):
     class Meta:
         verbose_name = "mensagem de contato"
         verbose_name_plural = "mensagens de contato"
+
+class Contact(models.Model):
+    """Model para armazenar informações de contato."""
+    address = models.TextField(
+        verbose_name="Endereço",
+        help_text="Informe o endereço completo."
+    )
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Data de criação")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Última atualização")
+
+    def __str__(self):
+        return self.address
+
+    class Meta:
+        verbose_name = "Contato"
+        verbose_name_plural = "Contatos"
+
+class About(models.Model):
+    title_topics = models.CharField(max_length=255, verbose_name="Título")
+    subtitle_topics = models.TextField(verbose_name="Subtítulo")
+
+    title_topic_one = models.CharField(max_length=255, verbose_name="Título do Tópico 1")
+    description_topic_one = models.TextField(verbose_name="Subtítulo do Tópico 1")
+
+    title_topic_two = models.CharField(max_length=255, verbose_name="Título do Tópico 2")
+    description_topic_two = models.TextField(verbose_name="Subtítulo do Tópico2")
+
+    title_topic_three = models.CharField(max_length=255, verbose_name="Título do Tópico 3")
+    description_topic_three = models.TextField(verbose_name="Subtítulo do Tópico 3")
+
+    def __str__(self):
+        return self.title_topics
+
+    class Meta:
+        verbose_name = "Sobre"
+        verbose_name_plural = "Sobre"

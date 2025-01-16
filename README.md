@@ -21,6 +21,11 @@ Ativar o ambiente virtual.
 venv\Scripts\activate
 ```
 
+Instalar as dependências.
+```
+pip install -r requirements.txt
+```
+
 Executa as migration para criar as tabelas no banco de dados.
 ```
 python manage.py migrate
@@ -29,6 +34,8 @@ python manage.py migrate
 Executar as seeds para cadastrar registro de teste.
 ```
 python manage.py seed_home
+python manage.py seed_address_contact
+python manage.py seed_about
 ```
 
 Criar o super usuário.
