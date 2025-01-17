@@ -1,3 +1,5 @@
+Código-fonte das lives sobre [Master Week Python e Django - Two](https://www.youtube.com/watch?v=1rFJ-eANS8k&list=PLmY5AEiqDWwBZurqD6xQdYdkbVEQwaU3O).<br>
+
 ## Requisitos
 
 * Python 3 ou superior - Conferir a versão: python --version
